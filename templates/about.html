@@ -12,6 +12,39 @@
       <title>About</title>
        {% load static %}
        <link rel="stylesheet" href="{% static "css/style.css" %}">
+       {% load static %}
+       <link rel="stylesheet" href="{% static "css/animate.min.css" %}">
+       {% load static %}
+       <link rel="stylesheet" href="{% static "css/bootstrap.css" %}">
+       {% load static %}
+       <link rel="stylesheet" href="{% static "css/bootstrap-grid.css" %}">
+       {% load static %}
+       <link rel="stylesheet" href="{% static "css/bootstrap-reboot.css" %}">
+       {% load static %}
+       <link rel="stylesheet" href="{% static "css/default-skin.css" %}">
+       {% load static %}
+       <link rel="stylesheet" href="{% static "css/font-awesome.min.css" %}">
+       {% load static %}
+       <link rel="stylesheet" href="{% static "css/icomoon.css" %}">
+       {% load static %}
+       <link rel="stylesheet" href="{% static "css/jquery.fancybox.min.css" %}">
+       {% load static %}
+       <link rel="stylesheet" href="{% static "css/jquery.mCustomScrollbar.min.css" %}">
+       {% load static %}
+       <link rel="stylesheet" href="{% static "css/jquery-ui.css" %}">
+       {% load static %}
+       <link rel="stylesheet" href="{% static "css/meanmenu.css" %}">
+       {% load static %}
+       <link rel="stylesheet" href="{% static "css/nice-select.css" %}">
+       {% load static %}
+       <link rel="stylesheet" href="{% static "css/normalize.css" %}">
+       {% load static %}
+       <link rel="stylesheet" href="{% static "css/owl.carousel.min.css" %}">
+       {% load static %}
+       <link rel="stylesheet" href="{% static "css/responsive.css" %}">
+       {% load static %}
+       <link rel="stylesheet" href="{% static "css/slick.css" %}">
+
       <meta name="keywords" content="">
       <meta name="description" content="">
       <meta name="author" content="">
@@ -40,7 +73,9 @@
          <div class="header_main">
             <div class="mobile_menu">
                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                  <div class="logo_mobile"><a href="index.html"><img src="images/logo.png"></a></div>
+                  <div class="logo_mobile"><a href="index.html">
+                      {% load static %}
+                      <img src= "{% static "images/logo.png" %}" alt="Sammy"></a></div>
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                   </button>
@@ -92,7 +127,8 @@
                   </div>
                </div>
                <div class="col-md-6 padding_right_0">
-                  <div><img src="images/about-img.png" class="about_img"></div>
+                   {% load static %}
+                  <div><img src={static} class="about_img"></div>
                </div>
             </div>
          </div>
