@@ -98,7 +98,8 @@
                </nav>
             </div>
             <div class="container-fluid">
-               <div class="logo"><a href="index.html"><img src="images/samt2.png"></a></div>
+
+               <div class="logo"><a href="index.html"><img src="    {% static "images/samt2.png" %}     "></a></div>
                <div class="menu_main">
                   <ul>
                      <li class="active"><a href="index.html">Home</a></li>
@@ -149,15 +150,16 @@
             <div class="services_section_2">
                <div class="row">
                   <div class="col-md-4">
-                     <div><img src="images/icon2.jpg" class="services_img"></div>
+                     <div>
+                         <img src="{%static "images/icon2.jpg" %}" class="services_img"></div>
                      <div class="btn_main"><a href="#">Book your flight</a></div>
                   </div>
                   <div class="col-md-4">
-                     <div><img src="images/activities2.jpg" class="services_img"></div>
+                     <div><img src=" {% static "images/activities2.jpg" %}" class="services_img"></div>
                      <div class="btn_main active"><a href="#">Explore Activities</a></div>
                   </div>
                   <div class="col-md-4">
-                     <div><img src="images/hotel3.jpeg" class="services_img"></div>
+                     <div><img src="{% static "images/hotel3.jpeg" %}" class="services_img"></div>
                      <div class="btn_main"><a href="#">Popular Destinations</a></div>
                   </div>
                </div>
@@ -177,7 +179,7 @@
                   </div>
                </div>
                <div class="col-md-6 padding_right_0">
-                  <div><img src="images/about-img.png" class="about_img"></div>
+                  <div><img src="{% static "images/about-img.png" %}" class="about_img"></div>
                </div>
             </div>
          </div>
@@ -189,7 +191,7 @@
             <h1 class="blog_taital">See Our  Video</h1>
             <p class="blog_text">many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which</p>
             <div class="play_icon_main">
-               <div class="play_icon"><a href="#"><img src="images/play-icon.png"></a></div>
+               <div class="play_icon"><a href="#"><img src="{% static "images/play-icon.png" %}"></a></div>
             </div>
          </div>
       </div>
@@ -213,8 +215,8 @@
                            </div>
                            <div class="box_right">
                               <div class="client_taital_left">
-                                 <div class="client_img"><img src="images/client-img.png"></div>
-                                 <div class="quick_icon"><img src="images/quick-icon.png"></div>
+                                 <div class="client_img"><img src="{% static "images/client-img.png" %}"></div>
+                                 <div class="quick_icon"><img src="{% static "images/quick-icon.png" %}"></div>
                               </div>
                               <div class="client_taital_right">
                                  <h4 class="client_name">Dame</h4>
@@ -230,8 +232,8 @@
                            </div>
                            <div class="box_right">
                               <div class="client_taital_left">
-                                 <div class="client_img"><img src="images/client-img.png"></div>
-                                 <div class="quick_icon"><img src="images/quick-icon.png"></div>
+                                 <div class="client_img"><img src="{% static "images/client-img.png" %}"></div>
+                                 <div class="quick_icon"><img src="{% static "images/quick-icon.png" %}"></div>
                               </div>
                               <div class="client_taital_right">
                                  <h4 class="client_name">Dame</h4>
@@ -247,8 +249,8 @@
                            </div>
                            <div class="box_right">
                               <div class="client_taital_left">
-                                 <div class="client_img"><img src="images/client-img.png"></div>
-                                 <div class="quick_icon"><img src="images/quick-icon.png"></div>
+                                 <div class="client_img"><img src="{% static "images/client-img.png" %}"></div>
+                                 <div class="quick_icon"><img src="{% static "images/quick-icon.png" %}"></div>
                               </div>
                               <div class="client_taital_right">
                                  <h4 class="client_name">Dame</h4>
@@ -284,17 +286,17 @@
                <div class="subscribe_bt"><a href="#">Subscribe</a></div>
             </div>
             <div class="location_main">
-               <div class="call_text"><img src="images/call-icon.png"></div>
+               <div class="call_text"><img src="{% static "images/call-icon.png" %} "></div>
                <div class="call_text"><a href="#">Call +01 1234567890</a></div>
-               <div class="call_text"><img src="images/mail-icon.png"></div>
+               <div class="call_text"><img src="{% static "images/mail-icon.png" %}"></div>
                <div class="call_text"><a href="#">demo@gmail.com</a></div>
             </div>
             <div class="social_icon">
                <ul>
-                  <li><a href="#"><img src="images/fb-icon.png"></a></li>
-                  <li><a href="#"><img src="images/twitter-icon.png"></a></li>
-                  <li><a href="#"><img src="images/linkedin-icon.png"></a></li>
-                  <li><a href="#"><img src="images/instagram-icon.png"></a></li>
+                  <li><a href="#"><img src="{% static "images/fb-icon.png" %}"></a></li>
+                  <li><a href="#"><img src="{% static "images/twitter-icon.png" %}"></a></li>
+                  <li><a href="#"><img src="{% static "images/linkedin-icon.png" %}"></a></li>
+                  <li><a href="#"><img src="{% static "images/instagram-icon.png" %}"></a></li>
                </ul>
             </div>
          </div>

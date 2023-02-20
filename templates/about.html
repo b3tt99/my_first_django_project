@@ -75,7 +75,7 @@
                <nav class="navbar navbar-expand-lg navbar-light bg-light">
                   <div class="logo_mobile"><a href="index.html">
                       {% load static %}
-                      <img src= "{% static "images/logo.png" %}" alt="Sammy"></a></div>
+                      <img src= "{% static "images/logo.png" %}" ></a></div>
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                   </button>
@@ -101,7 +101,9 @@
                </nav>
             </div>
             <div class="container-fluid">
-               <div class="logo"><a href="index.html"><img src="images/logo.png"></a></div>
+               <div class="logo"><a href="index.html">
+                   {% load static %}
+                   <img src="{% static "images/logo.png" %}" ></a></div>
                <div class="menu_main">
                   <ul>
                      <li class="active"><a href="index.html">Home</a></li>
@@ -128,7 +130,7 @@
                </div>
                <div class="col-md-6 padding_right_0">
                    {% load static %}
-                  <div><img src={static} class="about_img"></div>
+                  <div><img src="{%static "images/icon2.jpg" %}" class="about_img"></div>
                </div>
             </div>
          </div>
@@ -142,17 +144,30 @@
                <div class="subscribe_bt"><a href="#">Subscribe</a></div>
             </div>
             <div class="location_main">
-               <div class="call_text"><img src="images/call-icon.png"></div>
+
+               <div class="call_text">
+                   {% load static %}
+                   <img src="{% static "images/call-icon.png"%}"></div>
                <div class="call_text"><a href="#">Call +254 12490095</a></div>
-               <div class="call_text"><img src="images/mail-icon.png"></div>
+               <div class="call_text">
+                   {% load static %}
+                   <img src="{% static "images/mail-icon.png" %}" ></div>
                <div class="call_text"><a href="#">b3tt99@gmail.com</a></div>
             </div>
             <div class="social_icon">
                <ul>
-                  <li><a href="#"><img src="images/fb-icon.png"></a></li>
-                  <li><a href="#"><img src="images/twitter-icon.png"></a></li>
-                  <li><a href="#"><img src="images/linkedin-icon.png"></a></li>
-                  <li><a href="#"><img src="images/instagram-icon.png"></a></li>
+                  <li><a href="#">
+                      {% load static %}
+                      <img src="{%static "images/fb-icon.png"  %}"></a></li>
+                  <li><a href="#">
+                      {% load static %}
+                      <img src="{% static "images/twitter-icon.png" %}"></a></li>
+                  <li><a href="#">
+                      {% load static %}
+                      <img src="{% static "images/linkedin-icon.png" %}" ></a></li>
+                  <li><a href="#">
+                      {% load static %}
+                      <img src="{% static "images/instagram-icon.png"%}" ></a></li>
                </ul>
             </div>
          </div>
@@ -166,16 +181,24 @@
       </div>
       <!-- copyright section end -->
       <!-- Javascript files-->
-      <script src="js/jquery.min.js"></script>
-      <script src="js/popper.min.js"></script>
-      <script src="js/bootstrap.bundle.min.js"></script>
-      <script src="js/jquery-3.0.0.min.js"></script>
-      <script src="js/plugin.js"></script>
+      {% load static %}
+      <script src="{% static "js/jquery.min.js" %}"></script>
+      {% load static %}
+      <script src="{% static "js/popper.min.js"%}"></script>
+      {% load static %}
+      <script src="{% static "js/bootstrap.bundle.min.js" %}"></script>
+      {% load static %}
+      <script src="{% static "js/jquery-3.0.0.min.js" %}"></script>
+      {% load static %}
+      <script src="{% static "js/plugin.js" %}"></script>
       <!-- sidebar -->
-      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-      <script src="js/custom.js"></script>
+      {% load static %}
+      <script src="{% static "js/jquery.mCustomScrollbar.concat.min.js" %}"></script>
+      {% load static %}
+      <script src="{% static "js/custom.js" %}"></script>
       <!-- javascript --> 
-      <script src="js/owl.carousel.js"></script>
+      {% load static %}
+      <script src="{% static "js/owl.carousel.js" %}"></script>
       <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>    
    </body>
 </html>

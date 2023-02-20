@@ -319,13 +319,13 @@ button {
 }
 
 .menu_main li a {
-    color: #ffffff;
+    color: black;
     padding: 10px 20px;
     border-radius: 10px;
 }
 
 .menu_main li a:hover {
-    color: #ffffff;
+    color: black;
     background-color: #2b2278;
 }
 
